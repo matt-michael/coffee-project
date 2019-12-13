@@ -1,7 +1,7 @@
 "use strict"
 // COFFEE FUNCTIONALITY USED FOR USER INTERFACE
 function renderCoffee(coffee) {
-    var html = '<div class="coffee d-inline-flex flex-row flex-wrap justify-content-around w-50">';
+    var html = '<div class="coffee d-inline-flex flex-row flex-wrap justify-content-around w-50 my-2">';
     html += '<div class="coffee-box mx-5 my-2 w-50"> ' + '<span class="name">' + coffee.name + '</span>';
     html += ' ' + '<span class="roast">' + coffee.roast + '</span>' + '</div>';
     html += '</div>';
@@ -9,6 +9,8 @@ function renderCoffee(coffee) {
 
     return html;
 }
+
+
 // DISPLAYS ALL THE COFFEES WHEN YOU LOAD THE PAGE
 function renderCoffees(coffees) {
     var html = '';

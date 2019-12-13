@@ -35,10 +35,10 @@ td, th {
 
 .roast{
     color: gray;
-    font-size: small;
+    font-size: x-small;
 }
 
 .name{
     font-weight: bold;
-    font-size: medium;
+    font-size: large;
 }
