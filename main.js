@@ -48,6 +48,10 @@ function myFunction() {
     tbody.innerHTML = renderCoffees(filterCoffees);
 }
 
+function addCoffee() {
+    document.getElementsByClassName('name').innerHTML = document.getElementById("usr").value;
+}
+
 
 
 // THE ARRAY THE USERS ARE SEEING AND SORTING THROUGH
@@ -76,7 +80,7 @@ var nameInput = document.querySelector('#usr2');
 
 tbody.innerHTML = renderCoffees(coffees);
 // READER FROM THE USERS INTERACTION
-submitButton.addEventListener('click', updateCoffees);
+submitButton.addEventListener('click', addCoffee);
 roastSelection.addEventListener('change', updateCoffees);
 nameInput.addEventListener('input', myFunction);
 
