@@ -3,7 +3,8 @@ function renderCoffee(coffee) {
     var html = '<div class="coffee d-inline-flex flex-row flex-wrap justify-content-around w-50 my-2">';
     html += '<div class="coffee-box mx-5 my-2 w-50"> ' + '<span class="name">' + coffee.name + '</span>';
     html += ' ' + '<span class="roast">' + coffee.roast + '</span>' + '</div>';
-    html += ' ' + '<span id="display"></span>' + '</div>';
+    html += '<div class="coffee-box mx-5 my-2 w-50"> ' + '<span id="display"></span>';
+    html += ' ' + '<span id="addRoast"></span>' + '</div>';
     html += '</div>';
 
 
@@ -50,7 +51,8 @@ function myFunction() {
 
 function addCoffee() {
     console.log(document.getElementById('user_input').value);
-    document.getElementsByClassName('display').innerHTML = document.getElementById('user_input').value;
+    document.getElementById('display').innerHTML = document.getElementById('user_input').value;
+    document.getElementById('addRoast').innerHTML = document.getElementById('roast-selection2').value;
 }
 
 
