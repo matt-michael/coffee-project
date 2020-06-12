@@ -49,6 +49,7 @@ function myFunction() {
     tbody.innerHTML = renderCoffees(filterCoffees);
 }
 
+//ADD COFFEES
 function addCoffee() {
     console.log(document.getElementById('user_input').value);
     document.getElementById('display').innerHTML = document.getElementById('user_input').value;
