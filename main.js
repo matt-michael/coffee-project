@@ -1,4 +1,3 @@
-"use strict"
 // COFFEE FUNCTIONALITY USED FOR USER INTERFACE
 function renderCoffee(coffee) {
     var html = '<div class="coffee d-inline-flex flex-row flex-wrap justify-content-around w-50 my-2">';
@@ -50,6 +49,7 @@ function myFunction() {
 }
 
 function addCoffee() {
+    console.log(document.getElementById('user_input'));
     document.getElementsByClassName('display').innerHTML = document.getElementById('user_input').value;
 }
 
@@ -81,7 +81,7 @@ var nameInput = document.querySelector('#usr2');
 
 tbody.innerHTML = renderCoffees(coffees);
 // READER FROM THE USERS INTERACTION
-submitButton.addEventListener('click', addCoffee);
+// submitButton.addEventListener('click', addCoffee);
 roastSelection.addEventListener('change', updateCoffees);
 nameInput.addEventListener('input', myFunction);
 
