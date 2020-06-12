@@ -49,7 +49,7 @@ function myFunction() {
 }
 
 function addCoffee() {
-    console.log(document.getElementById('user_input'));
+    console.log(document.getElementById('user_input').value);
     document.getElementsByClassName('display').innerHTML = document.getElementById('user_input').value;
 }
 
