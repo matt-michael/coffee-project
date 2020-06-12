@@ -18,7 +18,7 @@
             </div>
 
             <div class="box-2 col text-right ">
-                <form>
+                <form action="#" onsubmit="addCoffee();return false">
                     <!--                dropdown-->
                     <label class="w-100 small text-left font-weight-bolder" for="roast-selection">Roast</label>
                     <select class="w-100  form-control-sm" id="roast-selection">
@@ -43,11 +43,11 @@
                     </select>
                     <!--                Text input-->
                     <div class="form-group ">
-                        <label class=" w-100 small text-left font-weight-bolder" for="usr">Name</label>
-                        <input type="text" class="form-control form-control-sm" id="usr">
+                        <label class=" w-100 small text-left font-weight-bolder" for="user_input">Name</label>
+                        <input type="text" class="form-control form-control-sm" id="user_input">
                     </div>
                     <!--                Submit Button-->
-                    <input class="w-100 btn btn-sm btn-primary btn-block my-3" id="submit" type="submit" />
+                    <input class="w-100 btn btn-sm btn-primary btn-block my-3" id="submit" type="submit" onclick="addCoffee();" />
                 </form>
 
             </div>
